@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# ChallengeNotion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **Objetivo**
 
-Currently, two official plugins are available:
+Crear una versión funcional pero simplificada de la página de reserva siguiendo el flujo proporcionado en los diseños. La tarea se centrará en desarrollar la interfaz de usuario y las interacciones necesarias para realizar una reserva.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Untitled](https://github.com/tomigonzalez/ChallengeNotion/assets/105464634/4588f00f-be64-45db-bfee-df02756c5ea9)
 
-## Expanding the ESLint configuration
+## **Requisitos Funcionales**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### **Selección de Servicio**
 
-- Configure the top-level `parserOptions` property like this:
+- Crear una pantalla donde se puedan desplegar y seleccionar servicios por categoría.
+- Implementar la funcionalidad de 'tap' para expandir las categorías y seleccionar un servicio.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### **Selección de Horario**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Desarrollar una interfaz que muestre los horarios disponibles y permita al usuario seleccionar uno.
+- Una vez seleccionado el horario, habilitar el botón 'Siguiente' para proceder.
+
+### **Confirmación de Reserva:**
+
+- Crear una pantalla de resumen que muestre el servicio y horario seleccionados.
+- Mostrar la opción de volver atrás o confirmar la reserva.
+
+### **Requisitos Técnicos:**
+
+### **Frontend**
+
+- Usar React y preferentemente Typescript.
+- Asegurar que el diseño sea responsivo y consistente con los mockups proporcionados.
+- Puedes usar las librerías que necesites siempre que se cumpla el resto de los requisitos.
+
+### **Interacción**
+
+- Manejar el estado de la aplicación para recordar las selecciones del usuario a través de las pantallas.
+- Validar que todas las selecciones necesarias se hayan realizado antes de permitir al usuario proceder a la pantalla de confirmación.
+  > > > > > > > 197b4e37d79fccf7d820ed324458406b529842f7
