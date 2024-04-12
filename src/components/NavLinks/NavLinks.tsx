@@ -7,7 +7,7 @@ type Props = {
 
 const NavLinks = (props: Props) => {
   const location = useLocation();
-
+  console.log(location);
   const estaActivo = location.pathname === props.link;
 
   return (
