@@ -11,7 +11,7 @@ const Inicio = () => {
         <p>Si queres interactuar con el mismo podes navegar con el menu</p>
       </div>
       <div className="h-72 flex flex-col items-center">
-        <p>Aca dejo mis redes, trabajos y como contactarme</p>
+        <p>Aca dejo mis redes, trabajos y como contactarme.</p>
         <div className="flex flex-row w-2/5 h-full items-center justify-evenly ">
           <a href="">
             <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-sky-500">
