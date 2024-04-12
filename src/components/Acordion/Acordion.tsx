@@ -5,7 +5,7 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/accordion";
-import { Box } from "@chakra-ui/react";
+
 import { useContext } from "react";
 import { StateContext } from "../../context/StateContext";
 
@@ -21,8 +21,6 @@ interface Service {
 }
 
 const Acordion = (props: Props) => {
-  // const [selectedService, setSelectedService] = useState<Service | null>(null);
-
   const example = useContext(StateContext);
 
   const handleSelectService = (service: Service) => {
@@ -34,30 +32,30 @@ const Acordion = (props: Props) => {
   };
 
   return (
-    <Accordion defaultIndex={[1]} allowMultiple>
+    <Accordion defaultIndex={[1]} allowMultiple className="text-black p-2">
       <AccordionItem>
         <h2>
           <AccordionButton>
-            <div className="bg-gray-200 w-full flex justify-between">
-              <Box as="span" flex="1" textAlign="left" border="none">
+            <div className="bg-gray-200 w-full flex justify-between hover:bg-sky-100">
+              <div className="flex-1 text-left border-none p-1">
                 {props.category}
-              </Box>
+              </div>
               <AccordionIcon />
             </div>
           </AccordionButton>
         </h2>
         {props.services.map((service) => (
-          <AccordionPanel pb={4} key={service.id} className="border m-1">
+          <AccordionPanel pb={4} key={service.id} className="border m-1 p-2">
             <h2>{service.name}</h2>
             <p>{service.description}</p>
-            <div className="w-full text-right mt-">
+            <div className="w-full text-right mt-6 text-white">
               <button
                 onClick={() => handleSelectService(service)}
                 className={`${
                   example.selectedService?.id === service.id
-                    ? "bg-gray-500"
-                    : "bg-gray-300"
-                } border p-1`}
+                    ? "bg-gray-300"
+                    : "bg-gray-700"
+                } border p-1 hover:bg-gray-500`}
               >
                 {example.selectedService?.id === service.id
                   ? "Deseleccionar"

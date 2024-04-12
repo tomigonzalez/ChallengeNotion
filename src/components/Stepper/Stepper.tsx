@@ -1,29 +1,31 @@
-import { Box, Progress, useSteps } from "@chakra-ui/react";
+import "../Stepper/Stepper.css";
 
-const Steppers = () => {
-  const steps = [
-    { title: "First", description: "Contact Info" },
-    { title: "Second", description: "Date & Time" },
-    { title: "Third", description: "Select Rooms" },
-  ];
-  const { activeStep } = useSteps({
-    index: 1,
-    count: steps.length,
-  });
+interface Props {
+  currentStep: number;
+}
 
-  const max = steps.length;
-  const progressPercent = (activeStep / max) * 100;
+const Stepper = (props: Props) => {
+  const steps = ["Categorias", "Turnos", "Confirmar"];
 
   return (
-    <Box position="relative">
-      <Progress
-        value={progressPercent}
-        position="absolute"
-        height="20px"
-        width="full"
-      />
-    </Box>
+    <>
+      <div className="flex justify-between">
+        {steps?.map((step, i) => (
+          <div
+            key={i}
+            className={`step-item ${props.currentStep === i + 1 && "active"} ${
+              i + 1 < props.currentStep && "complete"
+            } `}
+          >
+            <div className="step">
+              {i + 1 < props.currentStep ? <div /> : i + 1}
+            </div>
+            <p className="text-gray-500">{step}</p>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
-export default Steppers;
+export default Stepper;

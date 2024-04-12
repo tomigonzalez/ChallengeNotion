@@ -4,7 +4,7 @@ import NavLinks from "../NavLinks/NavLinks";
 
 const Nav = () => {
   return (
-    <header className="w-full h-20 bg-green-500 items-center justify-between flex">
+    <header className="w-full h-20 bg-sky-600 items-center justify-between flex">
       <div className="h-full w-1/5 flex justify-around items-center ">
         <a href="/#">
           <h1>

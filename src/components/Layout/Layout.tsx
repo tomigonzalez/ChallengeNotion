@@ -6,7 +6,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="w-full h-full p-0 m-0 bg-white overflow-y: auto">
+    <div className="w-full h-2/5 p-0 m-0 font-medium bg-white overflow-y: auto">
       <Nav></Nav>
       {children}
       {/* <Footer></Footer> */}

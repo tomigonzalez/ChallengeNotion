@@ -14,26 +14,26 @@ const Inicio = () => {
         <p>Aca dejo mis redes, trabajos y como contactarme</p>
         <div className="flex flex-row w-2/5 h-full items-center justify-evenly ">
           <a href="">
-            <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-purple-500">
+            <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-sky-500">
               <LucideGithub fontSize={60}></LucideGithub>
 
               <p>Git Hub</p>
             </div>
           </a>
           <a href="">
-            <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-purple-500">
+            <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-sky-500">
               <LucideLinkedin fontSize={60}></LucideLinkedin>
               <p>Linkedin</p>
             </div>
           </a>
           <a href="">
-            <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-purple-500">
+            <div className="flex flex-col justify-center items-center hover:drop-shadow-4xl hover:text-sky-500">
               <LucideSquareUserRound fontSize={60}></LucideSquareUserRound>
               <p>Cv</p>
             </div>
           </a>
           <a href="">
-            <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-purple-500">
+            <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-sky-500">
               <LucideWallpaper fontSize={60}></LucideWallpaper>
               <p>Portafolio</p>
             </div>

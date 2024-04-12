@@ -5,6 +5,15 @@ export type Service = {
   category: string;
 };
 
+export type Slots = {
+  horarios: string;
+};
+export type Turnos = {
+  date: string;
+  serviceId: number;
+  availableTimeslots: string[];
+};
+
 export type ServiceContextType = {
   selectedService: Service | null;
   setSelectedService: (value: Service | null) => void;
