@@ -8,7 +8,7 @@ const Nav = () => {
   const handleClick = () => navigate("/#");
   return (
     <header className="w-full h-20 bg-sky-600 items-center justify-between flex">
-      <div className="h-full w-1/5 flex justify-around items-center ">
+      <div className="h-full w-1/5 flex justify-around items-center cursor-pointer ">
         <a onClick={handleClick}>
           <h1 className="text-black curso hover:text-white">
             <LucideHome fontSize={45}></LucideHome>
