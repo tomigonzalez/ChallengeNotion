@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { LucideCoffee } from "../Icons/Coffe";
 import { LucideHome } from "../Icons/Home";
 import NavLinks from "../NavLinks/NavLinks";
