@@ -25,7 +25,7 @@ const AppRoutes: React.FC<object> = () => {
         path="/misturnos"
         element={<TurnosPag horarioSeleccionado={horarioSeleccionado} />}
       ></Route>
-      <Route path="*" element={<Inicio />} />
+      <Route path="*" element={<div />} />
     </Routes>
   );
 };
