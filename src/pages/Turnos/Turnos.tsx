@@ -51,7 +51,7 @@ const Turnos = (props: Props) => {
         <>
           <p>{fechaFormateada}</p>
 
-          <div className="grid grid-cols-3 gap-5 justify-items-center text-white  m-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 justify-items-center text-white  m-4">
             {horariosManana?.map((horario, index) => (
               <Turno
                 key={index}
@@ -69,7 +69,7 @@ const Turnos = (props: Props) => {
           <>
             <p>{fechaFormateada}</p>
 
-            <div className="grid grid-cols-3 gap-5 justify-items-center text-white  m-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 justify-items-center text-white  m-4">
               {horariosTarde?.map((horario, index) => (
                 <Turno
                   key={index}
@@ -85,14 +85,14 @@ const Turnos = (props: Props) => {
 
       <div className=" w-full p-4 flex flex-row justify-around">
         <button
-          className={`border p-2 pl-5 pr-5 text-white bg-gray-700 hover:bg-gray-500 `}
+          className={`border p-2 pl-3 pr-3 sm:p-2 sm:pl-5 sm:pr-5 text-white bg-gray-700 hover:bg-gray-500 `}
           onClick={props.handleBackPage}
         >
           Volver
         </button>
 
         <button
-          className={`border p-2 pl-5 pr-5 text-white bg-gray-700 hover:bg-gray-500 ${
+          className={`border p-2 pl-3 pr-3 sm:p-2 sm:pl-5 sm:pr-5 text-white bg-gray-700 hover:bg-gray-500 ${
             !props.horarioSeleccionado
               ? "opacity-50 cursor-not-allowed disabled"
               : ""

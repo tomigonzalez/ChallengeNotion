@@ -52,7 +52,7 @@ const Reservar = (props: Props) => {
 
   return (
     <section className="w-full min-h-screen flex flex-col items-center pb-4">
-      <div className="w-2/5 h-40 flex flex-col justify-center">
+      <div className="w-4/5 h-40 flex flex-col justify-center sm:w-2/5">
         <Stepper currentStep={currentStep}></Stepper>
       </div>
       <div className="w-3/5  border">

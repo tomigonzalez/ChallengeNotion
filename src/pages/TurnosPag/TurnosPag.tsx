@@ -22,7 +22,7 @@ const TurnosPag = (props: Props) => {
 
       {props.horarioSeleccionado ? (
         <>
-          <div className="flex flex-col w-3/5 h-full m-10 items-center border p-4">
+          <div className="flex flex-col w-9/12 sm:w-3/5 h-full m-10 items-center border p-4">
             {loading && <Loading></Loading>}
             {!loading && (
               <>

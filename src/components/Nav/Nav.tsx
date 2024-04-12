@@ -15,7 +15,7 @@ const Nav = () => {
           </h1>
         </a>
       </div>
-      <nav className="flex w-2/5 h-full justify-around items-center cursor-pointer">
+      <nav className="flex w-2/4 h-full justify-around items-center cursor-pointer sm:w-2/5 ">
         <NavLinks link="/reservas">
           <div className="flex flex-col items-center ">
             <LucideCoffee fontSize={40}></LucideCoffee>

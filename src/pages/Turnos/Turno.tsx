@@ -10,7 +10,7 @@ const Turno = (props: Props) => {
 
   return (
     <div
-      className={`bg-gray-700 border w-40 cursor ${
+      className={`bg-gray-700 border w-20 md:w-32 lg:w-40 cursor ${
         isSelected ? "opacity-50" : ""
       }`}
     >
@@ -18,7 +18,9 @@ const Turno = (props: Props) => {
         className="pointer w-full hover:bg-gray-500"
         onClick={props.onClick}
       >
-        <p className="pl-6 pr-6 pt-4 pb-4">{props.horarios}</p>
+        <p className=" pl-5  pr-5  pt-4  pb-4 lg:pl-6  lg:pr-6  lg:pt-4  lg:pb-4">
+          {props.horarios}
+        </p>
       </button>
     </div>
   );
