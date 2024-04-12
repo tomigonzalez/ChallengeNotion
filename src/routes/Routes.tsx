@@ -10,25 +10,23 @@ const AppRoutes: React.FC<object> = () => {
     null
   );
   return (
-    <>
-      <Routes>
-        <Route path="/#" element={<Inicio />}></Route>
-        <Route
-          path="reservas"
-          element={
-            <Reservar
-              horarioSeleccionado={horarioSeleccionado}
-              setHorarioSeleccionado={setHorarioSeleccionado}
-            />
-          }
-        ></Route>
-        <Route
-          path="misturnos"
-          element={<TurnosPag horarioSeleccionado={horarioSeleccionado} />}
-        ></Route>
-        <Route path="*" element={<Inicio />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/#" element={<Inicio />}></Route>
+      <Route
+        path="/reservas"
+        element={
+          <Reservar
+            horarioSeleccionado={horarioSeleccionado}
+            setHorarioSeleccionado={setHorarioSeleccionado}
+          />
+        }
+      ></Route>
+      <Route
+        path="/misturnos"
+        element={<TurnosPag horarioSeleccionado={horarioSeleccionado} />}
+      ></Route>
+      <Route path="*" element={<Inicio />} />
+    </Routes>
   );
 };
 

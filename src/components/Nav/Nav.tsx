@@ -13,14 +13,14 @@ const Nav = () => {
         </a>
       </div>
       <nav className="flex w-2/5 h-full justify-around items-center">
-        <NavLinks link="reservas">
+        <NavLinks link="/reservas">
           <div className="flex flex-col items-center ">
             <LucideCoffee fontSize={40}></LucideCoffee>
             <p>Reservar</p>
           </div>
         </NavLinks>
 
-        <NavLinks link="misturnos">
+        <NavLinks link="/misturnos">
           <div className="flex flex-col items-center">
             <LucideCoffee fontSize={40}></LucideCoffee>
             <p>Mis turnos</p>
