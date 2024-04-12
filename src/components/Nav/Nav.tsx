@@ -10,7 +10,7 @@ const Nav = () => {
     <header className="w-full h-20 bg-sky-600 items-center justify-between flex">
       <div className="h-full w-1/5 flex justify-around items-center ">
         <a onClick={handleClick}>
-          <h1>
+          <h1 className="text-black cursor-pointer hover:text-white">
             <LucideHome fontSize={45}></LucideHome>
           </h1>
         </a>

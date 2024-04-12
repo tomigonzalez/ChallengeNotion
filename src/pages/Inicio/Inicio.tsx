@@ -19,26 +19,29 @@ const Inicio = () => {
           Aca dejo mis redes, trabajos y como contactarme
         </p>
         <div className="flex flex-row w-full h-full items-center justify-evenly  sm:w-3/5">
-          <a href="">
+          <a href="https://github.com/tomigonzalez" target="_blank">
             <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-sky-500">
               <LucideGithub fontSize={60}></LucideGithub>
 
               <p>Git Hub</p>
             </div>
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/tomigonzalez" target="_blank">
             <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-sky-500">
               <LucideLinkedin fontSize={60}></LucideLinkedin>
               <p>Linkedin</p>
             </div>
           </a>
-          <a href="">
+          <a
+            href="https://drive.google.com/file/d/1veHRzEFCGVP2nDM08Fs5imXDmMsyFvJp/view"
+            target="_blank"
+          >
             <div className="flex flex-col justify-center items-center hover:drop-shadow-4xl hover:text-sky-500">
               <LucideSquareUserRound fontSize={60}></LucideSquareUserRound>
               <p>Cv</p>
             </div>
           </a>
-          <a href="">
+          <a href="https://portafoliov3-tan.vercel.app/" target="_blank">
             <div className="flex flex-col justify-center items-center hover:drop-shadow-3xl hover:text-sky-500">
               <LucideWallpaper fontSize={60}></LucideWallpaper>
               <p>Portafolio</p>
