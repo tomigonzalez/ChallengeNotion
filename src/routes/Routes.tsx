@@ -14,7 +14,7 @@ const AppRoutes: React.FC<object> = () => {
       <Routes>
         <Route path="/#" element={<Inicio />}></Route>
         <Route
-          path="/reservas"
+          path="reservas"
           element={
             <Reservar
               horarioSeleccionado={horarioSeleccionado}
@@ -23,7 +23,7 @@ const AppRoutes: React.FC<object> = () => {
           }
         ></Route>
         <Route
-          path="/misturnos"
+          path="misturnos"
           element={<TurnosPag horarioSeleccionado={horarioSeleccionado} />}
         ></Route>
         <Route path="*" element={<Inicio />} />
