@@ -5,7 +5,7 @@ import Reservar from "../pages/Reservar/Reservar";
 
 import TurnosPag from "../pages/TurnosPag/TurnosPag";
 
-const AppRoutes: React.FC<object> = () => {
+const AppRoutes: React.FC = () => {
   const [horarioSeleccionado, setHorarioSeleccionado] = useState<string | null>(
     null
   );
