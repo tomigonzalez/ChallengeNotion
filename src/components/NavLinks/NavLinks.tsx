@@ -8,7 +8,7 @@ type Props = {
 const NavLinks = (props: Props) => {
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location);
+
   const estaActivo = location.pathname === props.link;
   const handleClick = () => navigate(props.link);
   return (
