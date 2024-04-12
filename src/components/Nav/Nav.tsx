@@ -1,12 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { LucideCoffee } from "../Icons/Coffe";
 import { LucideHome } from "../Icons/Home";
 import NavLinks from "../NavLinks/NavLinks";
 
 const Nav = () => {
+  const navigate = useNavigate();
+  const handleClick = () => navigate("/#");
   return (
     <header className="w-full h-20 bg-sky-600 items-center justify-between flex">
       <div className="h-full w-1/5 flex justify-around items-center ">
-        <a href="/#">
+        <a onClick={handleClick}>
           <h1>
             <LucideHome fontSize={45}></LucideHome>
           </h1>
