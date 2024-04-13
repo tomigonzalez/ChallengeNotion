@@ -4,7 +4,8 @@
 
 Crear una versión funcional pero simplificada de la página de reserva siguiendo el flujo proporcionado en los diseños. La tarea se centrará en desarrollar la interfaz de usuario y las interacciones necesarias para realizar una reserva.
 
-![Untitled](https://github.com/tomigonzalez/ChallengeNotion/assets/105464634/4588f00f-be64-45db-bfee-df02756c5ea9)
+![Untitled (1)](https://github.com/tomigonzalez/ChallengeNotion/assets/105464634/6eb984ea-1efc-4459-ba55-990e8ce10873)
+
 
 ## **Requisitos Funcionales**
 
